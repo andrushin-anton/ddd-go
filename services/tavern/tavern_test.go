@@ -3,9 +3,9 @@ package tavern
 import (
 	"testing"
 
-	"github.com/google/uuid"
 	"github.com/andrushin-anton/ddd-go/domain/products"
 	"github.com/andrushin-anton/ddd-go/services/order"
+	"github.com/google/uuid"
 )
 
 func init_products(t *testing.T) []products.Product {
@@ -48,7 +48,7 @@ func Test_Tavern(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	
+
 	order := []uuid.UUID{
 		products[0].ID(),
 	}

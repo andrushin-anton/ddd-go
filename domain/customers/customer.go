@@ -3,9 +3,9 @@ package customers
 import (
 	"errors"
 
-	"github.com/google/uuid"
 	"github.com/andrushin-anton/ddd-go/common/entity"
 	"github.com/andrushin-anton/ddd-go/common/value"
+	"github.com/google/uuid"
 )
 
 var (
@@ -17,11 +17,11 @@ var (
 type Customer struct {
 	// person is the root entity of a customer
 	// which means the person.ID is the main identifier for this aggregate
-	person *entity.Person 
+	person *entity.Person
 	// a customer can hold many products
-	products []*entity.Item 
+	products []*entity.Item
 	// a customer can perform many transactions
-	transactions []value.Transaction 
+	transactions []value.Transaction
 }
 
 // NewCustomer is a factory to create a new Customer aggregate
@@ -49,6 +49,7 @@ func NewCustomer(name string) (Customer, error) {
 func (c *Customer) ID() uuid.UUID {
 	return c.person.ID
 }
+
 // SetID sets the root ID
 func (c *Customer) SetID(id uuid.UUID) {
 	if c.person == nil {

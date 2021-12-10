@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/andrushin-anton/ddd-go/domain/customers"
+	"github.com/google/uuid"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"

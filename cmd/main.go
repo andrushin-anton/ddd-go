@@ -2,10 +2,10 @@
 package main
 
 import (
-	"github.com/google/uuid"
 	"github.com/andrushin-anton/ddd-go/domain/products"
 	"github.com/andrushin-anton/ddd-go/services/order"
 	servicetavern "github.com/andrushin-anton/ddd-go/services/tavern"
+	"github.com/google/uuid"
 )
 
 func main() {

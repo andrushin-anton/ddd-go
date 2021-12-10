@@ -3,8 +3,8 @@ package products
 import (
 	"errors"
 
-	"github.com/google/uuid"
 	"github.com/andrushin-anton/ddd-go/common/entity"
+	"github.com/google/uuid"
 )
 
 var (

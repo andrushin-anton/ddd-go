@@ -2,14 +2,14 @@
 package order
 
 import (
-	"log"
 	"context"
+	"log"
 
-	"github.com/google/uuid"
-	"github.com/andrushin-anton/ddd-go/domain/products"
 	"github.com/andrushin-anton/ddd-go/domain/customers"
+	"github.com/andrushin-anton/ddd-go/domain/products"
 	"github.com/andrushin-anton/ddd-go/infrastructure/memory"
 	"github.com/andrushin-anton/ddd-go/infrastructure/mongo"
+	"github.com/google/uuid"
 )
 
 // OrderConfiguration is an alias for a function that will take in a pointer to an OrderService and modify it
@@ -78,7 +78,6 @@ func (o *OrderService) AddCustomer(name string) (uuid.UUID, error) {
 
 	return c.ID(), nil
 }
-
 
 // WithCustomerRepository applies a given customer repository to the OrderService
 func WithCustomerRepository(cr customers.CustomerRepository) OrderConfiguration {

@@ -1,8 +1,8 @@
 package value
 
 import (
-	"time"
 	"github.com/google/uuid"
+	"time"
 )
 
 // Transaction is a payment between two parties

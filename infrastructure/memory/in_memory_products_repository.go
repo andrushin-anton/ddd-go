@@ -3,8 +3,8 @@ package memory
 import (
 	"sync"
 
-	"github.com/google/uuid"
 	"github.com/andrushin-anton/ddd-go/domain/products"
+	"github.com/google/uuid"
 )
 
 type MemoryProductRepository struct {
